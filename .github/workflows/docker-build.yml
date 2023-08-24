@@ -10,3 +10,5 @@ jobs:
         run: dokcer build -t jkl836/flask-redis:latest .
       - name: list docker image
         run: docker image ls
+      - name: dockerhub login
+        run: docker login -u jkl836 -p
